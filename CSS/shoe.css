@@ -132,6 +132,7 @@ body {
 }
 .head3i:hover .hove{
     display: block;
+    z-index:100;
 }
 .hove1{
     font-size: 18px;
@@ -146,6 +147,8 @@ body {
 }
 .head3ins:hover .hove1{
     display: flex;
+    z-index:100;
+    
 }
 .back{
     position: absolute;
@@ -1206,3 +1209,4 @@ footer{
     background-color: white;
     font-family: bold;
 }
+

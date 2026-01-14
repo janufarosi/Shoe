@@ -129,10 +129,11 @@ body {
     border: 1px solid;
     top: 50px; left: -120px;
     display: none;
+    z-index:100;
 }
 .head3i:hover .hove{
     display: block;
-    z-index:100;
+    
 }
 .hove1{
     font-size: 18px;
@@ -144,11 +145,10 @@ body {
     top: 50px; left: 0px;
     display: none;
     gap: 30px;
+    z-index:100;
 }
 .head3ins:hover .hove1{
     display: flex;
-    z-index:100;
-    
 }
 .back{
     position: absolute;
@@ -1209,4 +1209,5 @@ footer{
     background-color: white;
     font-family: bold;
 }
+
 

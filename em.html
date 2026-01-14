@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sliderout{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* moving container */
+.slides{
+    display: flex;
+    width: 300%;
+    animation: slideX 12s infinite;
+}
+
+/* each slide */
+.slide{
+    width: 100%;
+    position: relative;
+}
+
+.slide img{
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* text overlay */
+.slid{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    font-size: 40px;
+}
+
+.flat{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.shop{
+    background-color: white;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+/* animation */
+@keyframes slideX{
+    0%   {transform: translateX(0);}
+    30%  {transform: translateX(0);}
+
+    35%  {transform: translateX(-100vw);}
+    65%  {transform: translateX(-100vw);}
+
+    70%  {transform: translateX(-200vw);}
+    100% {transform: translateX(-200vw);}
+}
+
+    </style>
+</head>
+<body>
+    <div class="sliderout">
+    <div class="slides">
+
+        <div class="slide">
+            <img src="image/home1.jpg" alt="">
+            <div class="slid">
+                <div class="flat">Flat 50% sale Kids Shoe</div>
+                <div class="shop">Shop Me</div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="image/home2.jpg" alt="">
+            <div class="slid">
+                <div class="flat">Flat 40% sale Men Shoe</div>
+                <div class="shop">Shop Me</div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="image/home3.jpg" alt="">
+            <div class="slid">
+                <div class="flat">New Arrival Collection</div>
+                <div class="shop">Shop Me</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
